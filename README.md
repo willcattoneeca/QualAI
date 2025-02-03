@@ -5,32 +5,37 @@ This repository contains a dataset designed to fine-tune GPT-3.5 on philosophica
 ## Usage
 ### 1. Clone the repository.
 ### 2. Set Up a Virtual Environment
-    1. Install venv (if not already installed):
-    ```
-    sudo apt update
-    sudo apt install python3-venv
-    ```
-    2. Create a Virtual Environment:
-    ```
-    python3 -m venv venv
-    ```
-    3. Activate the Virtual Environment:
-    ```
-    source venv/bin/activate
-    ```
+
+1. Install venv (if not already installed):
+```
+sudo apt update
+sudo apt install python3-venv
+```
+
+2. Create a Virtual Environment:
+```
+python3 -m venv venv
+```
+
+3. Activate the Virtual Environment:
+```
+source venv/bin/activate
+```
 ### 3. Install Dependencies
-    1. Ensure pip is up to date:
-    ```
-    python3 -m pip install --upgrade pip
-    ```
-    2. Install Required Packages:
-    ```
-    pip install -r requirements.txt
-    ```
-    3. Verify Installation: Check that FastAPI, Uvicorn, and OpenAI are installed by running:
-    ```
-    pip list
-    ```
+1. Ensure pip is up to date:
+```
+python3 -m pip install --upgrade pip
+```
+
+2. Install Required Packages:
+```
+pip install -r requirements.txt
+```
+
+3. Verify Installation: Check that FastAPI, Uvicorn, and OpenAI are installed by running:
+```
+pip list
+```
 ### 4. Project Structure
 * `data/sentience_examples.jsonl`: Dataset of multi-turn conversations exploring AI's perspective on sentience and consciousness.
 * `app.py`: Backend server for interacting with the fine-tuned model using FastAPI.
